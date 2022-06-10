@@ -16,6 +16,11 @@ namespace Week3.Data.Context
         public MyContext(DbContextOptions<MyContext> options) : base(options)
         {
         }
+
+        public MyContext()
+        {
+        }
+
         DbSet<Product> Products { get; set; }
         DbSet<Category> Categories { get; set; }
         DbSet<ProductFeature> ProductFeatures { get; set; }
